@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE contaopackage>
+<extension name="discourse" date="20170127">
+    <author user="FloB" name="Florian Bender" />
+    <copyright>&amp;copy; 2015 Florian Bender <fb+git@quantumedia.de></copyright>
+    <license>AGPLv3</license>
+    <classification type="free" category="application" />
+    <release version="10000009" build="2" date="20170127" />
+    <contao minversion="20090009" maxversion="20110179" />
+    <language code="en">
+        <translator user="FloB" name="Florian Bender" />
+        <searchtags>Discourse,SSO,forum,connector,bridge,login,single,sign-on,sign-in</searchtags>
+        <title>Discourse Forum Connector</title>
+        <teaser>Managing Discourse users via Contao</teaser>
+        <description>
+            &lt;p&gt;
+                This extension provides a way to let the Discourse forum software (<http://www.discourse.org/>)
+                be aware of Contao users. At the moment, this is limited to Single Sign-On of Contao users into
+                Discourse, i.e. when logging into Discourse, the user is redirected to a Contao page with the
+                module included in this extension and authenticated against the Contao user database, then
+                redirected back to the Discourse forum where the login request is validated.
+            &lt;/p&gt;
+            &lt;p&gt;
+                To get this to work, you need to fill out the SSO settings in the Discourse settings as well as
+                the respective fields in the Contao settings! To limit Discourse login privileges, you need to
+                limit the visibility/access privileges of the FE module to specific Contao user groups.
+            &lt;/p&gt;
+            &lt;p&gt;
+                This Version is only for Contao 2.9.x and higher, and may not work in Contao v3. Help with
+                porting this extension is greatly appreciated at <https://github.com/fbender/contao-discourse>!
+            &lt;/p&gt;
+        </description>
+        <releasenotes>Initial release with basic SSO functionality only.</releasenotes>
+        <manual link="https://github.com/fbender/contao-discourse/wiki" />
+        <forum link="https://community.contao.org/de/showthread.php?50849-Integration-f%C3%BCr-Discourse-(Forum-amp-Mailing-List)" />
+    </language>
+    <language code="de">
+        <translator user="FloB" name="Florian Bender" />
+        <searchtags>Discourse,SSO,Forum,Connector,Anbindung,Bridge,Login,single,sign-on,sign-in</searchtags>
+        <title>Discourse-Forum Anbindung</title>
+        <teaser>Discourse-Nutzer über Contao verwalten</teaser>
+        <description>
+            &lt;p&gt;
+                This extension provides a way to let the Discourse forum software (<http://www.discourse.org/>)
+                be aware of Contao users. At the moment, this is limited to Single Sign-On of Contao users into
+                Discourse, i.e. when logging into Discourse, the user is redirected to a Contao page with the
+                module included in this extension and authenticated against the Contao user database, then
+                redirected back to the Discourse forum where the login request is validated.
+            &lt;/p&gt;
+            &lt;p&gt;
+                To get this to work, you need to fill out the SSO settings in the Discourse settings as well as
+                the respective fields in the Contao settings! To limit Discourse login privileges, you need to
+                limit the visibility/access privileges of the FE module to specific Contao user groups.
+            &lt;/p&gt;
+            &lt;p&gt;
+                This Version is only for Contao 2.9.x and higher, and may not work in Contao v3. Help with
+                porting this extension is greatly appreciated at <https://github.com/fbender/contao-discourse>!
+            &lt;/p&gt;
+        </description>
+        <releasenotes>Initial release with basic SSO functionality only.</releasenotes>
+        <manual link="https://github.com/fbender/contao-discourse/wiki" />
+        <forum link="https://community.contao.org/de/showthread.php?50849-Integration-f%C3%BCr-Discourse-(Forum-amp-Mailing-List)" />
+    </language>
+</extension>

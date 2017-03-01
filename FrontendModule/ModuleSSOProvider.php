@@ -1,36 +1,19 @@
 <?php
 
-/**
- * Discourse SSO Provider module
- * Copyright (C) 2015 Florian Bender <fb+git@quantumedia.de>
+/*
+ * This file is part of the Craffft Discourse SSO Bundle.
  *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Affero General Public License as
- * published by the Free Software Foundation, either version 3 of the
- * License, or (at your option) any later version.
+ * (c) Florian Bender <fb+git@quantumedia.de>
+ * (c) Daniel Kiesel <https://github.com/iCodr8>
  *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU Affero General Public License for more details.
- *
- * You should have received a copy of the GNU Affero General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- *
- * PHP version 5
- * @copyright  Florian Bender 2015
- * @author     Florian Bender <fb+git@quantumedia.de>
- * @author     Daniel Kiesel <https://github.com/iCodr8>
- * @package    Discourse
- * @license    AGPLv3 (GNU Affero GPL v3.0)
- * @filesource
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
 
-namespace DiscourseSSO;
+namespace Craffft\ContaoDiscourseSSOBundle\FrontendModule;
 
 use Contao\BackendTemplate;
 use Contao\Module;
-//use Craffft\ContaoDiscourseSSOBundle\SSO\SSOProviderPayload;
 
 /**
  * Class ModuleSSOProvider
@@ -68,7 +51,7 @@ class ModuleSSOProvider extends Module
 
             return $objTemplate->parse();
         }
-/*
+
         // Return nothing if necessary parameters were not provided
         if (!isset($_GET['sso']) || !isset($_GET['sig'])) {
             return ''; // TODO: return error? log??
@@ -84,7 +67,7 @@ class ModuleSSOProvider extends Module
         }
 
         $container = \System::getContainer();
-        /** @var SSOProviderPayload $objSSOPayload *
+        /** @var SSOProviderPayload $objSSOPayload */
         $objSSOPayload = $container->get('craffft.sso.sso_provider_payload');
         $objSSOPayload->setSignatureSecret($GLOBALS['TL_CONFIG']['discourseSSOSecret']);
         $objSSOPayload->parseChallengePayload($strSSOPayload, $strSSOSignature); // TODO: catch exception?
@@ -119,7 +102,7 @@ class ModuleSSOProvider extends Module
 
         $this->redirect($strDiscourseSSOEndpoint);
 
-        return '';*/
+        return '';
     }
 
     /**

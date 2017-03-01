@@ -1,34 +1,15 @@
 <?php
 
-/**
- * Discourse module for Contao Open Source CMS 2.x
- * Copyright (C) 2015 Florian Bender <fb+git@quantumedia.de>
+/*
+ * This file is part of the Craffft Discourse SSO Bundle.
  *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Affero General Public License as
- * published by the Free Software Foundation, either version 3 of the
- * License, or (at your option) any later version.
+ * (c) Florian Bender <fb+git@quantumedia.de>
+ * (c) Daniel Kiesel <https://github.com/iCodr8>
  *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU Affero General Public License for more details.
- *
- * You should have received a copy of the GNU Affero General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- *
- * PHP version 5
- * @copyright  Florian Bender 2015
- * @author     Florian Bender <fb+git@quantumedia.de>
- * @author     Daniel Kiesel <https://github.com/iCodr8>
- * @package    Discourse
- * @license    AGPLv3 (GNU Affero GPL v3.0)
- * @filesource
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
 
-/*
- * dca: tl_settings
- */
 $GLOBALS['TL_DCA']['tl_settings']['palettes']['default'] .= ';{discourse_legend},discourseSSOHost,discourseSSOSecret';
 
 $GLOBALS['TL_DCA']['tl_settings']['fields']['discourseSSOHost'] = array

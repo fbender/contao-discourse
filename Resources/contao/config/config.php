@@ -10,4 +10,4 @@
  * file that was distributed with this source code.
  */
 
-$GLOBALS['FE_MOD']['application']['discourseSSOProvider'] = '\\Craffft\\ContaoDiscourseSSOBundle\\FrontendModule';
+$GLOBALS['FE_MOD']['application']['discourseSSOProvider'] = '\\Craffft\\ContaoDiscourseSSOBundle\\FrontendModule\\ModuleSSOProvider';

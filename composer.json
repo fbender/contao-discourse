@@ -23,7 +23,7 @@
         "source": "https://github.com/Craffft/contao-discourse"
     },
     "require": {
-        "php": ">=7.0",
+        "php": ">=7.0.0",
         "symfony/framework-bundle": "~2.8|~3.0",
         "symfony/http-kernel": "~2.8|~3.0"
     },

@@ -10,4 +10,4 @@
  * file that was distributed with this source code.
  */
 
-$GLOBALS['TL_DCA']['tl_module']['palettes']['discourseSSOProvider'] = '{title_legend},name;{protected_legend},protected;{expert_legend:hide},guests,cssID';
+$GLOBALS['TL_DCA']['tl_module']['palettes']['discourseSSOProvider'] = '{title_legend},name,type;{protected_legend},protected;{expert_legend:hide},guests,cssID';

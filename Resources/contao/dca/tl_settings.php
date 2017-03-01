@@ -1,4 +1,4 @@
-<?php if (!defined('TL_ROOT')) die('You can not access this file directly!');
+<?php
 
 /**
  * Discourse module for Contao Open Source CMS 2.x
@@ -20,6 +20,7 @@
  * PHP version 5
  * @copyright  Florian Bender 2015
  * @author     Florian Bender <fb+git@quantumedia.de>
+ * @author     Daniel Kiesel <https://github.com/iCodr8>
  * @package    Discourse
  * @license    AGPLv3 (GNU Affero GPL v3.0)
  * @filesource
@@ -32,33 +33,33 @@ $GLOBALS['TL_DCA']['tl_settings']['palettes']['default'] .= ';{discourse_legend}
 
 $GLOBALS['TL_DCA']['tl_settings']['fields']['discourseSSOHost'] = array
 (
-	'label'                   => &$GLOBALS['TL_LANG']['tl_settings']['discourseSSOHost'],
-	'exclude'                 => true,
-	'inputType'               => 'text',
-	'eval'                    => array('rgxp'=>'url', 'decodeEntities'=>true, 'tl_class'=>'w50'),
-	'save_callback'           => array(
-		array('tl_settings_discourse', 'validateURL')
-	)
+    'label'                   => &$GLOBALS['TL_LANG']['tl_settings']['discourseSSOHost'],
+    'exclude'                 => true,
+    'inputType'               => 'text',
+    'eval'                    => array('rgxp'=>'url', 'decodeEntities'=>true, 'tl_class'=>'w50'),
+    'save_callback'           => array(
+        array('tl_settings_discourse', 'validateURL')
+    )
 );
 
 $GLOBALS['TL_DCA']['tl_settings']['fields']['discourseSSOSecret'] = array
 (
-	'label'                   => &$GLOBALS['TL_LANG']['tl_settings']['discourseSSOSecret'],
-	'exclude'                 => true,
-	'inputType'               => 'text',
-	'eval'                    => array('decodeEntities'=>false, 'tl_class'=>'w50')
+    'label'                   => &$GLOBALS['TL_LANG']['tl_settings']['discourseSSOSecret'],
+    'exclude'                 => true,
+    'inputType'               => 'text',
+    'eval'                    => array('decodeEntities'=>false, 'tl_class'=>'w50')
 );
 
 
-class tl_settings_discourse extends tl_settings {
-	public function validateURL($varValue) {
-		$varValue = $this->idnaEncodeUrl($varValue); // method of System class
-		if (filter_var($varValue, FILTER_VALIDATE_URL) === false) {
-			throw new Exception('Not a valid URL: ' + $varValue);
-		}
-		return $varValue;
-	}
+class tl_settings_discourse extends tl_settings
+{
+    public function validateURL($varValue)
+    {
+        $varValue = $this->idnaEncodeUrl($varValue); // method of System class
+        if (filter_var($varValue, FILTER_VALIDATE_URL) === false) {
+            throw new Exception('Not a valid URL: ' + $varValue);
+        }
+
+        return $varValue;
+    }
 }
-
-
-#EOF

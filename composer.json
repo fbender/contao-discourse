@@ -1,0 +1,40 @@
+{
+    "name": "craffft/contao-discourse",
+    "type": "symfony-bundle",
+    "description": "ContaoDiscourseSSOBundle for Symfony with Contao",
+    "keywords": [
+        "discourse",
+        "SSO",
+        "authentication"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Florian Bender",
+            "email": "fb+git@quantumedia.de"
+        },
+        {
+            "name": "Daniel Kiesel",
+            "homepage": "https://github.com/iCodr8"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/Craffft/contao-discourse/issues",
+        "source": "https://github.com/Craffft/contao-discourse"
+    },
+    "require": {
+        "php": ">=7.0",
+        "symfony/framework-bundle": "~2.8|~3.0",
+        "symfony/http-kernel": "~2.8|~3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Craffft\\ContaoDiscourseSSOBundle\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.x-dev"
+        }
+    }
+}

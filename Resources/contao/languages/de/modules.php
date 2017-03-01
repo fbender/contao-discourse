@@ -1,4 +1,4 @@
-<?php if (!defined('TL_ROOT')) die('You can not access this file directly!');
+<?php
 
 /**
  * Discourse module for Contao Open Source CMS 2.x
@@ -21,22 +21,18 @@
  * PHP version 5
  * @copyright  Florian Bender 2015
  * @author     Florian Bender <fb+git@quantumedia.de>
+ * @author     Daniel Kiesel <https://github.com/iCodr8>
  * @package    Discourse
  * @license    LGPL
  * @filesource
  */
 
-
 /**
  * Extension folder
  */
-$GLOBALS['TL_LANG']['MOD']['discourse'] = array('Discourse Connector');
-
+$GLOBALS['TL_LANG']['MOD']['discourse'] = array('Discourse-Anbindung');
 
 /**
  * Front end modules
  */
-$GLOBALS['TL_LANG']['FMD']['discourseSSOProvider'] = array('Discourse SSO Provider', 'This module enables Single Sign-On of a Discourse installation. Users will be redirected to the Discourse Host (see Contao Settings) after successful authentication. This module does not produce any output (similar to the "Logout" module).');
-
-
-#EOF
+$GLOBALS['TL_LANG']['FMD']['discourseSSOProvider'] = array('Discourse SSO Provider', 'Dieses Modul ermöglicht einen Single Sign-On von einer Discourse-Installation. Nach erfolgreicher Authentisierung wir der Nutzer auf den Discourse Host (s. Contao Einstellungen) weitergleitet. Das Modul erzeugt keine Ausgabe (ähnlich dem "Logout"-Modul).');

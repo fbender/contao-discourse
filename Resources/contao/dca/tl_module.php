@@ -1,4 +1,4 @@
-<?php if (!defined('TL_ROOT')) die('You can not access this file directly!');
+<?php
 
 /**
  * Discourse module for Contao Open Source CMS 2.x
@@ -20,12 +20,10 @@
  * PHP version 5
  * @copyright  Florian Bender 2015
  * @author     Florian Bender <fb+git@quantumedia.de>
+ * @author     Daniel Kiesel <https://github.com/iCodr8>
  * @package    Discourse
  * @license    AGPLv3 (GNU Affero GPL v3.0)
  * @filesource
  */
 
 $GLOBALS['TL_DCA']['tl_module']['palettes']['discourseSSOProvider'] = '{title_legend},name;{protected_legend},protected;{expert_legend:hide},guests,cssID';
-
-
-#EOF

@@ -1,4 +1,4 @@
-<?php if (!defined('TL_ROOT')) die('You can not access this file directly!');
+<?php
 
 /**
  * Discourse module for Contao Open Source CMS 2.x
@@ -21,22 +21,19 @@
  * PHP version 5
  * @copyright  Florian Bender 2015
  * @author     Florian Bender <fb+git@quantumedia.de>
+ * @author     Daniel Kiesel <https://github.com/iCodr8>
  * @package    Discourse
  * @license    LGPL
  * @filesource
  */
 
-
 /**
  * Fields
  */
-$GLOBALS['TL_LANG']['tl_settings']['discourseSSOHost']   = array('Host-Adresse', 'Host-Adresse der Discourse-Installation, für die Single Sign-On angeboten werden soll.');
-$GLOBALS['TL_LANG']['tl_settings']['discourseSSOSecret'] = array('SSO Secret', '"Shared Secret" des Single Sign-On für die Discourse-Installation, für die Single Sign-On angeboten werden soll.');
+$GLOBALS['TL_LANG']['tl_settings']['discourseSSOHost']   = array('Host Address', 'Host address of the Discourse installation, for which Single Sign-On will be provided.');
+$GLOBALS['TL_LANG']['tl_settings']['discourseSSOSecret'] = array('SSO Secret', 'Single Sign-On "Shared Secret" of the Discourse installation, for which Single Sign-On will be provided.');
 
 /**
  * Legends
  */
-$GLOBALS['TL_LANG']['tl_settings']['discourse_legend']   = 'Discourse Einstellungen';
-
-
-#EOF
+$GLOBALS['TL_LANG']['tl_settings']['discourse_legend']   = 'Discourse settings';

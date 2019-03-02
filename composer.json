@@ -23,18 +23,18 @@
         "source": "https://github.com/Craffft/contao-discourse"
     },
     "require": {
-        "php": ">=7.0.0",
-        "symfony/framework-bundle": "~2.8|~3.0",
-        "symfony/http-kernel": "~2.8|~3.0"
+        "php": ">=7.1",
+        "contao/core-bundle": "~4.4"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.0"
+    },
+    "extra": {
+        "contao-manager-plugin": "Craffft\\ContaoDiscourseSSOBundle\\ContaoManager\\Plugin"
     },
     "autoload": {
         "psr-4": {
-            "Craffft\\ContaoDiscourseSSOBundle\\": ""
-        }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "2.x-dev"
+            "Craffft\\ContaoDiscourseSSOBundle\\": "src/"
         }
     }
 }

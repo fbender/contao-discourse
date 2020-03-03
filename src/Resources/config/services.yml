@@ -1,0 +1,5 @@
+services:
+
+    # SSO
+    craffft.sso.sso_provider_payload:
+        class: Craffft\ContaoDiscourseSSOBundle\SSO\SSOProviderPayload
